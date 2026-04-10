@@ -7,19 +7,19 @@ function App(){
     const [tasks, setTasks] = useState([{
       id: 1,
       title: "Estudar programação",
-      descripition: "Estudar programação para se tornar um desenvolvedor full stack.",
+      description: "Estudar programação para se tornar um desenvolvedor full stack.",
       isCompleted: false
     },
     {
       id: 2,
       title: "Estudar Inglês",
-      descripition: "Estudar inglês para se tornar fluente.",
+      description: "Estudar inglês para se tornar fluente.",
       isCompleted: false
     },
     {
       id: 3,
       title: "Estudar direito",
-      descripition: "Estudar direito para se tornar um ministro do STF.",
+      description: "Estudar direito para se tornar um ministro do STF.",
       isCompleted: false 
     },
   ]);
@@ -41,11 +41,11 @@ function App(){
       setTasks(newTasks);
   }
   
-  function onAddTaskSubmit(title, descripition){ 
+  function onAddTaskSubmit(title, description){ 
       const newTask = {
         id: v4(),
         title,
-        descripition,
+        description,
         isCompleted: false,
       };
       setTasks([... tasks, newTask]);
@@ -57,7 +57,7 @@ function App(){
         <h1 className="text-3xl text-slate-100 font-bold text-center">Gerenciador</h1>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} /> 
         <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick}/>
-      </div>    
+      </div>
     </div>
   )
 };
