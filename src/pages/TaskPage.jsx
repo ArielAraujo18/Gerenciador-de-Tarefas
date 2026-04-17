@@ -21,8 +21,8 @@ function TaskPage() {
             </div>
 
             <div className="bg-slate-200 p-4 rounded-md">
-                <h1 className="text-xl text-white font-bold text-slate-600">{title}</h1>
-                <p className="text-white text-slate-600">{description}</p>
+                <h1 className="text-xl font-bold text-slate-600">{title}</h1>
+                <p className=" text-slate-600">{description}</p>
             </div>
 
         </div>        
